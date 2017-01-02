@@ -31,7 +31,6 @@ video {
 	position: fixed;
 	padding: 0.3rem;
 	width: 100%;
-	z-index: 2;
 }
 
 .title-bar-title {
@@ -142,6 +141,11 @@ video {
 
 	.input-group-field {
 		margin-left: -5.6rem;
+		background-color: #ECEFF1;
+	}
+
+	textarea {
+		background-color: #ECEFF1;
 	}
 }
 
@@ -227,6 +231,7 @@ a.accordion-title {
 	border-radius: 5px;
 	width: 5.6rem;
 	padding: 0.32rem 1rem;
+	background-color: #B0BEC5;
 }
 
 .input-group-field {
