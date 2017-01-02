@@ -31,6 +31,7 @@ video {
 	position: fixed;
 	padding: 0.3rem;
 	width: 100%;
+	z-index: 100;
 }
 
 .title-bar-title {
@@ -75,6 +76,7 @@ video {
 /*************************************************/
 #menu-desktop {
 	margin-bottom: 5rem;
+	z-index: 100;
 }
 
 #menu-desktop li {
@@ -135,16 +137,7 @@ video {
 		margin-top: 3rem;
 	}
 
-	.input-group-label {
-		position: relative;
-	}
-
 	.input-group-field {
-		margin-left: -5.6rem;
-		background-color: #ECEFF1;
-	}
-
-	textarea {
 		background-color: #ECEFF1;
 	}
 }
@@ -164,10 +157,6 @@ video {
 
 	.card > :last-child {
 		background-color: transparent;
-	}
-
-	.input-group-label {
-		position: absolute;
 	}
 }
 /*****************************************************************/
@@ -228,14 +217,7 @@ a.accordion-title {
 /* Formulario de contacto */
 /*******************************/
 .input-group-label {
-	border-radius: 5px;
-	width: 5.6rem;
-	padding: 0.32rem 1rem;
 	background-color: #B0BEC5;
-}
-
-.input-group-field {
-	border-radius: 5px;
 }
 
 .btn-success {

@@ -35,6 +35,7 @@ $(function() {
 		calcularTopMenu($(this).scrollTop());
 	});
 
+	/*
 	$(".input-group-field").focus(function() {
 		if ($(window).width() < 1024) {
 			$(this).siblings(".input-group-label").fadeOut("fast");
@@ -52,14 +53,17 @@ $(function() {
 			}
 		}
 	});
+	*/
 
 	$("#limpiar").click(function() {
 		document.getElementById("formulario-contacto").reset();
 
+		/*
 		if ($(window).width() < 1024) {
 			$(".input-group-label").fadeIn();
 		} else {
 			$(".input-group-label").animate({left: "0rem"}, "fast");
 		}
+		*/
 	});
 });
