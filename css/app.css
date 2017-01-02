@@ -1,0 +1,247 @@
+/* Generales */
+/********************************/
+body {
+	background-color: #ECEFF1;
+}
+/********************************/
+
+
+/* Video de fondo */
+/**********************/
+video {
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    z-index: -100;
+}
+/**********************/
+
+
+/* Barra de navegación responsive */
+/******************************/
+.title-bar {
+	background-color: #263238;
+	position: fixed;
+	padding: 0.3rem;
+	width: 100%;
+	z-index: 2;
+}
+
+.title-bar-title {
+	margin-left: 0.3rem;
+}
+/******************************/
+
+
+/* Menu para moviles */
+/********************************/
+#menu-movil {
+	background-color: #607D8B;
+	color: #FFFFFF;
+}
+
+#menu-movil .close-button {
+	color: #FFFFFF;
+}
+
+#menu-movil h4 {
+	font-weight: bold;
+	color: #455A64;
+	padding: 1rem 1rem 0 1rem;
+}
+
+#menu-movil a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#menu-movil li {
+	color: #ECEFF1;
+}
+
+#menu-movil li:hover {
+	background-color: #78909C;
+}
+/********************************/
+
+
+/* Menu para tablets y desktops */
+/*************************************************/
+#menu-desktop {
+	margin-bottom: 5rem;
+}
+
+#menu-desktop li {
+	margin: 1rem;
+	border-radius: 0.2rem;
+	background-color: rgba(96, 125, 139, 0);
+
+	transition: 0.5s;
+}
+
+#menu-desktop li:hover {
+	background-color: rgba(38, 50, 56, 0.6);
+}
+
+#menu-desktop a {
+	text-decoration: none;
+	color: #ECEFF1;
+	font-weight: bold;
+}
+
+#menu-desktop > div > ul {
+	position: fixed;
+}
+/*************************************************/
+
+.primera-imagen {
+	border-radius: 0.5rem;
+}
+
+
+/* Todos los subtitulos de la pagina */
+/*******************/
+.subtitulo {
+	color: #ECEFF1;
+	font-weight: bold;
+}
+/*******************/
+
+
+/* Estilos segun el tamaño de la pantalla */
+/*****************************************************************/
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	#menu-desktop {
+		position: fixed;
+	}
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+	#imagen-principal {
+		margin-top: 3rem;
+	}
+
+	.input-group-label {
+		position: relative;
+	}
+
+	.input-group-field {
+		margin-left: -5.6rem;
+	}
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+/* Menor o igual a tablet */
+@media screen and (max-width: 1023px) {
+	.subtitulo {
+		color: #263238;
+	}
+
+	.primera-imagen {
+		border-radius: 0;
+	}
+
+	.card > :last-child {
+		background-color: transparent;
+	}
+
+	.input-group-label {
+		position: absolute;
+	}
+}
+/*****************************************************************/
+
+
+/* Cards */
+/*********************************/
+.card {
+	border: none;
+}
+
+.card-divider {
+	background-color: #B0BEC5;
+	padding: 0.5rem;
+}
+
+.card > :last-child {
+	background-color: #ECEFF1;
+	padding: 0.5rem;
+}
+/*********************************/
+
+
+/* Accordion */
+/**********************************/
+.accordion-title {
+	border: none;
+    background-color: #B0BEC5;
+    color: #263238;
+    padding: 1rem;
+    border-bottom: 0.5rem solid #ECEFF1;
+
+    transition: 0.5s;
+}
+
+a.accordion-title {
+	text-decoration: none;
+}
+
+.accordion-title:hover {
+	color: #263238;
+	background-color: #90A4AE;
+}
+
+.accordion-title:focus,
+.accordion-title:active {
+	color: #263238;
+	background-color: #B0BEC5;
+}
+
+.accordion-content {
+	background-color: #ECEFF1;
+	border: none;
+	padding: 0.5rem;
+}
+/**********************************/
+
+/* Formulario de contacto */
+/*******************************/
+.input-group-label {
+	border-radius: 5px;
+	width: 5.6rem;
+	padding: 0.32rem 1rem;
+}
+
+.input-group-field {
+	border-radius: 5px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+/*******************************/
