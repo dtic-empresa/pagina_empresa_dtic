@@ -35,35 +35,37 @@ $(function() {
 		calcularTopMenu($(this).scrollTop());
 	});
 
-	/*
 	$(".input-group-field").focus(function() {
+		console.log("focus");
+
 		if ($(window).width() < 1024) {
-			$(this).siblings(".input-group-label").fadeOut("fast");
+			// $(this).siblings(".input-group-label").fadeOut("fast");
+			$(this).siblings(".input-group-label").animate({width: "-20rem", padding: "0"}, "fast");
 		} else {
-			$(this).siblings(".input-group-label").animate({left: "23.9rem"}, "fast");
+			$(this).siblings(".input-group-label").animate({left: "22.9rem"}, "fast");
 		}
 	});
 
 	$(".input-group-field").blur(function() {
+		console.log("blur");
+
 		if ($(this).val() == "") {
 			if ($(window).width() < 1024) {
-				$(this).siblings(".input-group-label").fadeIn("fast");
+				// $(this).siblings(".input-group-label").fadeIn("fast");
+				$(this).siblings(".input-group-label").animate({width: "6.5rem", padding: "0 1rem"}, "fast");
 			} else {
 				$(this).siblings(".input-group-label").animate({left: "0rem"}, "fast");
 			}
 		}
 	});
-	*/
 
 	$("#limpiar").click(function() {
 		document.getElementById("formulario-contacto").reset();
 
-		/*
 		if ($(window).width() < 1024) {
-			$(".input-group-label").fadeIn();
+			$(".input-group-label").animate({width: "6.5rem", padding: "0 1rem"}, "fast");
 		} else {
 			$(".input-group-label").animate({left: "0rem"}, "fast");
 		}
-		*/
 	});
 });
