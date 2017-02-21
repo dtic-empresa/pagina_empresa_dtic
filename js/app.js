@@ -11,6 +11,8 @@ function calcularTopMenu(top) {
 				.animate({margin: "1rem"}, "fast")
 				.parent()
 				.animate({backgroundColor: "rgba(38, 50, 56, 0)"}, "fast");
+
+			$("#menu-desktop a").animate({"color":"#061336"}, "fast");
 		}
 
 		aux = 0;
@@ -22,6 +24,8 @@ function calcularTopMenu(top) {
 				.animate({margin: "0 1rem"}, "fast")
 				.parent()
 				.animate({backgroundColor: "rgba(38, 50, 56, 0.5)"}, "fast");
+
+			$("#menu-desktop a").animate({"color":"#FFFFFF"}, "fast");
 		}
 
 		aux = 1;
@@ -36,10 +40,9 @@ $(function() {
 	});
 
 	$(".input-group-field").focus(function() {
-		console.log("focus");
+		$(this).attr("placeholder", $(this).siblings(".input-group-label").text().trim());
 
 		if ($(window).width() < 1024) {
-			// $(this).siblings(".input-group-label").fadeOut("fast");
 			$(this).siblings(".input-group-label").animate({width: "-20rem", padding: "0"}, "fast");
 		} else {
 			$(this).siblings(".input-group-label").animate({left: "22.9rem"}, "fast");
@@ -47,11 +50,10 @@ $(function() {
 	});
 
 	$(".input-group-field").blur(function() {
-		console.log("blur");
+		$(this).removeAttr("placeholder");
 
 		if ($(this).val() == "") {
 			if ($(window).width() < 1024) {
-				// $(this).siblings(".input-group-label").fadeIn("fast");
 				$(this).siblings(".input-group-label").animate({width: "6.5rem", padding: "0 1rem"}, "fast");
 			} else {
 				$(this).siblings(".input-group-label").animate({left: "0rem"}, "fast");

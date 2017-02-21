@@ -6,6 +6,23 @@ body {
 /********************************/
 
 
+/* Logo */
+.logo_dtic {
+	position: fixed;
+	max-width: 6.5em;
+    margin-left: 0.3em;
+}
+
+
+.orbit-image {
+	border-radius: 1em;
+}
+
+.orbit-caption {
+	border-radius: 0 0 1em 1em;
+}
+
+
 /* Video de fondo */
 /**********************/
 video {
@@ -92,19 +109,18 @@ video {
 
 #menu-desktop a {
 	text-decoration: none;
-	color: #ECEFF1;
-	font-weight: bold;
+    color: #061336;
+    font-weight: bold;
+    font-family: "Comic Sans MS";
+    font-size: 1.3em;
 }
 
 #menu-desktop > div > ul {
 	position: fixed;
 	z-index: 1;
+	margin-top: -0.5em;
 }
 /************************************************
-
-.primera-imagen {
-	border-radius: 0.5rem;
-}
 
 
 /* Todos los subtitulos de la pagina */

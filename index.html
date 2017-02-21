@@ -36,6 +36,12 @@
          </div>
 
          <div class="off-canvas-content" data-off-canvas-content>
+            <img src="imagenes/logo.png" class="logo_dtic">
+
+            <div>
+               <h1 class="logo_dtic_codigo"></h1>
+            </div>
+
             <div class="title-bar fixed" data-responsive-toggle="menu-desktop" data-hide-for="medium">
                <button class="menu-icon" type="button" data-open="menu-movil"></button>
 
@@ -43,7 +49,7 @@
             </div>
 
             <video class="show-for-large" playsinline autoplay muted loop>
-               <source src="videos/notebook.mp4" type="video/mp4" />
+               <source src="videos/fondo.mp4" type="video/mp4" />
             </video>
 
             <nav id="menu-desktop" class="row expanded">
@@ -58,18 +64,53 @@
             </nav>
 
             <section>
-               <article id="imagen-principal" class="row" data-magellan-target="imagen-principal">
-                  <div class="medium-12 large-8 large-offset-2">
-                     <img src="imagenes/apple.jpg" width="100%" class="primera-imagen" />
+               <div
+                  class="orbit medium-12 large-8 large-offset-2"
+                  role="region"
+                  aria-label="Favorite Space Pictures"
+                  data-orbit
+                  data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out">
+                  
+                  <ul class="orbit-container">
+                     <button class="orbit-previous">
+                        <span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
+                     </button>
 
-                     <h2 style="margin-top: -3.5em;">
-                        <pre>
-   ¡Tu lo <b>imaginas</b>,
-      nosotros lo <b>creamos</b>!
-                        </pre>
-                     </h2>
-                  </div>
-               </article>
+                     <button class="orbit-next">
+                        <span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;
+                     </button>
+
+                     <li class="is-active orbit-slide">
+                        <img class="orbit-image" src="imagenes/imagen_1.jpg" alt="Space">
+                        <figcaption class="orbit-caption">Si tu lo imaginas, nosotros lo creamos!</figcaption>
+                     </li>
+
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="imagenes/imagen_2.jpg" alt="Space">
+                        <figcaption class="orbit-caption">...</figcaption>
+                     </li>
+
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="imagenes/imagen_3.jpg" alt="Space">
+                        <figcaption class="orbit-caption">...</figcaption>
+                     </li>
+
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="imagenes/imagen_4.jpg" alt="Space">
+                        <figcaption class="orbit-caption">...</figcaption>
+                     </li>
+                  </ul>
+                  <nav class="orbit-bullets">
+                     <button class="is-active" data-slide="0">
+                        <span class="show-for-sr">First slide details.</span>
+                        <span class="show-for-sr">Current Slide</span>
+                     </button>
+
+                     <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                     <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                  </nav>
+               </div>
 
                <div class="row" style="margin-top: 2em; margin-bottom: 1em;">
                   <div class="small-12 column text-center">
@@ -249,42 +290,6 @@
                         
                         <textarea cols="30" rows="10" placeholder="Mensaje" style="resize: none;"></textarea>
                         
-                        <!--
-                        <div class="input-group">
-                           <span class="input-group-label">
-                              <i class="fi-torsos-female-male"></i>
-                           </span>
-                           <input class="input-group-field" type="text" placeholder="Nombre" required="true">
-                        </div>
-
-                        <div class="input-group">
-                           <span class="input-group-label">
-                              <i class="fi-at-sign"></i>
-                           </span>
-                           <input class="input-group-field" type="email" placeholder="E-mail" required="true">
-                        </div>
-
-                        <div class="input-group">
-                           <span class="input-group-label">
-                              <i class="fi-pencil"></i>
-                           </span>
-                           <input class="input-group-field" type="text" placeholder="Asunto" required="true">
-                        </div>
-
-                        <div class="input-group">
-                           <span class="input-group-label">
-                              <i class="fi-mail"></i>
-                           </span>
-                           <textarea
-                              cols="30"
-                              rows="10"
-                              class="input-group-field"
-                              placeholder="Mensaje"
-                              required="true"
-                              style="resize: none;"></textarea>
-                        </div>
-                        -->
-
                         <div class="row">
                            <div class="small-6 column">
                               <button id="enviar" type="submit" class="button btn-success expanded">Enviar</button>
