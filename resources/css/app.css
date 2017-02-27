@@ -6,23 +6,6 @@ body {
 /********************************/
 
 
-/* Logo */
-.logo_dtic {
-	position: fixed;
-	max-width: 6.5em;
-    margin-left: 0.3em;
-}
-
-
-.orbit-image {
-	border-radius: 1em;
-}
-
-.orbit-caption {
-	border-radius: 0 0 1em 1em;
-}
-
-
 /* Video de fondo */
 /**********************/
 video {
@@ -39,6 +22,89 @@ video {
     z-index: -100;
 }
 /**********************/
+
+
+/* Menu para tablets y desktops */
+/*************************************************/
+#menu-desktop {
+	padding-top: 1em;
+}
+
+#menu-desktop li {
+	margin: 1rem;
+	border-radius: 0.2rem;
+	background-color: rgba(96, 125, 139, 0.3);
+
+	transition: 0.5s;
+}
+
+#menu-desktop li:hover {
+	background-color: rgba(38, 50, 56, 0.6);
+}
+
+#menu-desktop a {
+	text-decoration: none;
+    font-weight: bold;
+    color: #ECEFF1;
+}
+
+#menu-desktop > div > ul {
+	position: fixed;
+	z-index: 1;
+	margin-top: -0.5em;
+}
+/************************************************
+
+
+/* Logo */
+.logo_dtic {
+	width: 100px;
+}
+
+
+/* Icono iniciar sesion */
+/*******************************/
+.icono_iniciar_sesion {
+	width: 80px;
+	cursor: pointer;
+	padding-top: 1em;
+
+	transition: 0.3s;
+}
+
+.icono_iniciar_sesion:hover {
+	width: 90px;
+}
+/*******************************/
+
+
+/* Orbit */
+/*********************************/
+.orbit-image {
+	border-radius: 1em;
+}
+
+.orbit-caption {
+	border-radius: 0 0 1em 1em;
+}
+/*********************************/
+
+
+/* Iconos sociales */
+/************************/
+.icono-social {
+	width: 70px;
+	cursor: pointer;
+	padding-top: 3.3em;
+
+	transition: 0.3s;
+}
+
+.icono-social:hover {
+	width: 80px;
+}
+/************************/
+
 
 
 /* Barra de navegación responsive */
@@ -89,45 +155,12 @@ video {
 /********************************/
 
 
-/* Menu para tablets y desktops */
-/*************************************************/
-#menu-desktop {
-	margin-bottom: 5rem;
-}
-
-#menu-desktop li {
-	margin: 1rem;
-	border-radius: 0.2rem;
-	background-color: rgba(96, 125, 139, 0);
-
-	transition: 0.5s;
-}
-
-#menu-desktop li:hover {
-	background-color: rgba(38, 50, 56, 0.6);
-}
-
-#menu-desktop a {
-	text-decoration: none;
-    color: #061336;
-    font-weight: bold;
-    font-family: "Comic Sans MS";
-    font-size: 1.3em;
-}
-
-#menu-desktop > div > ul {
-	position: fixed;
-	z-index: 1;
-	margin-top: -0.5em;
-}
-/************************************************
-
-
 /* Todos los subtitulos de la pagina */
 /*******************/
 .subtitulo {
 	color: #ECEFF1;
 	font-weight: bold;
+	text-shadow: 0px 0px 5px grey;
 }
 /*******************/
 
@@ -245,6 +278,16 @@ a.accordion-title {
 
 /* Formulario de contacto */
 /*******************************/
+.input-group, textarea {
+	box-shadow: 0px 0px 5px grey;
+
+	transition: 0.2s;
+}
+
+.input-group:hover, textarea:focus {
+	box-shadow: 0px 0px 0px grey;
+}
+
 .input-group-label {
 	position: relative;
 	background-color: #B0BEC5;
